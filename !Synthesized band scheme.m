@@ -1,16 +1,16 @@
 %%%%This is the code for ATPRK produced by Dr Qunming Wang; Email: wqm11111@126.com
 %%%%Copyright belong to Qunming Wang
 %%%%When using the code, please cite the fowllowing papers
-%%%%Q. Wang, W. Shi, Z. Li, P. M. Atkinson. Fusion of Sentinel-2 images. Remote Sensing of Environment, 2016, 187: 241¨C252.
-%%%%Q. Wang, W. Shi, P. M. Atkinson, Y. Zhao. Downscaling MODIS images with area-to-point regression kriging. Remote Sensing of Environment, 2015, 166: 191¨C204.
+%%%%Q. Wang, W. Shi, Z. Li, P. M. Atkinson. Fusion of Sentinel-2 images. Remote Sensing of Environment, 2016, 187: 241Â¨C252.
+%%%%Q. Wang, W. Shi, P. M. Atkinson, Y. Zhao. Downscaling MODIS images with area-to-point regression kriging. Remote Sensing of Environment, 2015, 166: 191Â¨C204.
 
 %%%%%The synthesized schem in ATPRK amounts to the use of all 10m bands
 clear all;
 load S2_20m;%%%20m bands in a image cube (6 bands)
 load S2_10m;%%%10m bands in a image cube (4 bands)
 s=2;
-I_MS=S2_204_20m;
-I_PAN=S2_204_10m;
+I_MS=S2_20m;
+I_PAN=S2_10m;
 
 w=1;
 sigma=s/2;
